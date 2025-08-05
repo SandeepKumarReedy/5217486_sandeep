@@ -1,0 +1,106 @@
+  135  vi sum.c
+  136  history
+  137  ls
+  138  cd stepin
+  139  ls
+  140  vi sum.c
+  141  vi sum.c && ./a.out
+  142  cat sum.c
+  143  ./a.out
+  144  vi sum.c && ./a.out
+  145  ./a.out
+  146  gcc sum.c && ./a.out
+  147  ls
+  148  nano filehandlinf commands
+  149  head filecmd
+  150  head filehandlinf
+  151  tail filehandlinf
+  152* nano sampl
+  153  cat sample.txt
+  154  cut -c 1-3 sample.txt
+  155  cat sample.txt
+  156  cut -c 4-8 sample.txt
+  157  cut -d ':' -f2 sample.txt
+  158  cut -d ':' -f2,3 sample.txt
+  159  ls
+  160  nano f1
+  161  nano f2
+  162  cat f1
+  163  cat f2
+  164  paste f1 f2
+  165  paste -d ':' f1 f2
+  166  paste -s f1 f2
+  167  cat sample.txt
+  168  sort sample.txt
+  169  sort sample.txt -r
+  170  sort -t ':' -k2 sample.txt
+  171  sort -t ':' -k3 sample.txt
+  172  sort -t ':' -k4 sample.txt
+  173  cat sample.txt
+  174  tr ':' '|' < sample.txt
+  175  cat sample.txt
+  176  ls
+  177  tr ':' '|' <sample.txt> s1.txt
+  178  ls
+  179  cat s1.txt
+  180  tr ':0' '|$' <sample.txt
+  181  cat sample.txt
+  182  tr -s '0' <sample.txt
+  183  tr -d '0' <sample.txt
+  184  cat sample.txt
+  185  nano ex.txt
+  186  cat ex.txt
+  187  uniq ex.txt
+  188  nano ex.txt
+  189  uniq ex.txt
+  190  ls
+  191  cat sample.txt
+  192  cat s1.txt
+  193  cmp sample.txt s1.txt
+  194  diff sample.txt s1.txt
+  195  nano san.txt
+  196  cat san.txt
+  197  grep main san.txt
+  198  grep ^int san.txt
+  199  grep \; san.txt
+  200  nano san.txt
+  201  cat san.txt
+  202  grep ^int san.txt
+  203  nano sed_test
+  204  cat sed_test
+  205  sed 's/hello/hi/' sed_test
+  206  cat sed_test
+  207  sed -i 's/hello/hi/' sed_test
+  208  cat sed_test
+  209  sed 's/!/$/g' sed_test
+  210  cat sed_test
+  211  sed '/simple/d' sed_test
+  212  sed '/sed/d' sed_test
+  213  sed '/hi/a welcome to sed' sed_test
+  214  sed -n '/hi/p' sed_test
+  215  nano emp.txt
+  216  cat emp.txt
+  217  awk '{print $0}' emp.txt
+  218  awk '{print $1,$3}' emp.txt
+  219  awk '$3>50000 {print $1,$3}' emp.txt
+  220  awk 'BEGIN {print "Name: , Salary: "} {print $1,$3}' emp.txt
+  221  awk 'BEGIN {print "Name:  Salary: "} {print $1,$3}' emp.txt
+  222  awk 'BEGIN {print "Name age  Salary "} {print $1,$3}' emp.txt
+  223  awk '{total+=$3} END {print "total Salary=",total} emp.txt
+
+'
+  224  awk '{total+=$3} END {print "total Salary=",total}' emp.txt
+  225  awk '{print NR, $1}' emp.txt
+  226  awk '/sandeep/' emp.txt
+  227  awk '$2 <=20 {print $1,$2}' emp.txt
+  228  ls -l
+  229  ls -l san.txt
+  230  chmod u+x s1.txt
+  231  ls -l s1.txt
+  232  chmod o-r s1.txt
+  233  ls -l s1.txt
+  234  chmod 462 s1.txt
+  235  ls -l s1.txt
+  236  histroy
+  237  histary
+  238  history
