@@ -5,17 +5,38 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-    public static void main(String args[] ) throws Exception {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-       BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));
-        String a=sc.readLine();
-         String b=sc.readLine();
-         StringBuilder re=new StringBuilder();
-         for(int i=0;i<a.length();i++){
-            re.append((a.charAt(i)-'0')^(b.charAt(i)-'0'));
-            
-         }
-     System.out.println(re.toString());   
-     
+
+    public static String stringsXOR(String s, String t) {
+        String res = new String("");
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == t.charAt(i))  
+                res += "0";                  
+            else
+                res += "1";                   
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        java.util.Scanner in = new java.util.Scanner(System.in);
+        String s = in.nextLine();
+        String t = in.nextLine();
+        System.out.println(stringsXOR(s, t));
     }
 }
+
+
+In Python
+def strings_xor(s, t):
+    res = ""
+    for i in range(len(s)):
+        if s[i] == t[i]:
+            res += '0';
+        else:
+            res += '1';
+
+    return res
+
+s = input()
+t = input()
+print(strings_xor(s, t))
